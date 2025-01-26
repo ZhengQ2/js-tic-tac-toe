@@ -155,7 +155,7 @@ export default function Game() {
       <div className="game-info">
         <ol>{moves}</ol>
         <button onClick={() => activateAI(ai)}>{ai_des}</button>
-        <button onClick={() => handlePlay(Array(9).fill(null))}>Reset</button>
+        <button onClick={() => jumpTo(0)}>Reset</button>
       </div>
     </div>
   );
